@@ -1,0 +1,902 @@
+[
+    {
+        "model": "jobs.job",
+        "pk": 1,
+        "fields": {
+            "title": "Desarrollador Backend",
+            "company": "Mercado Libre",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "A convenir",
+            "employment_type": "contract",
+            "experience_level": "entry",
+            "skills_required": "Excel, Linux, Scrum, Kubernetes",
+            "date_posted": "2025-03-17T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 2,
+        "fields": {
+            "title": "Ingeniero de Datos",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "remote",
+            "experience_level": "mid",
+            "skills_required": "Linux, Power BI, Excel, CSS",
+            "date_posted": "2025-03-30T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 3,
+        "fields": {
+            "title": "Diseñador UX/UI",
+            "company": "TechSolutions",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "full_time",
+            "experience_level": "entry",
+            "skills_required": "Excel, Figma, Django, Power BI",
+            "date_posted": "2025-04-02T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 4,
+        "fields": {
+            "title": "Analista de Marketing",
+            "company": "Rappi",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "full_time",
+            "experience_level": "mid",
+            "skills_required": "SAP, Java, AWS, HTML",
+            "date_posted": "2025-03-14T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 5,
+        "fields": {
+            "title": "Gerente de Producto",
+            "company": "Ruta N",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "part_time",
+            "experience_level": "entry",
+            "skills_required": "SAP, Linux, Django, Kubernetes",
+            "date_posted": "2025-03-31T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 6,
+        "fields": {
+            "title": "Ingeniero DevOps",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "internship",
+            "experience_level": "entry",
+            "skills_required": "Django, Python, Java, Power BI",
+            "date_posted": "2025-03-12T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 7,
+        "fields": {
+            "title": "Administrador de Bases de Datos",
+            "company": "Tata Consultancy Services",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "contract",
+            "experience_level": "junior",
+            "skills_required": "Node.js, Figma, Java, Django",
+            "date_posted": "2025-03-21T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 8,
+        "fields": {
+            "title": "Redactor Técnico",
+            "company": "Rappi",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "A convenir",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Illustrator, Django, SAP, React",
+            "date_posted": "2025-03-18T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 9,
+        "fields": {
+            "title": "Especialista en Soporte Técnico",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "A convenir",
+            "employment_type": "full_time",
+            "experience_level": "junior",
+            "skills_required": "Django, Excel, AWS, Photoshop",
+            "date_posted": "2025-03-28T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 10,
+        "fields": {
+            "title": "Científico de Datos",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "internship",
+            "experience_level": "senior",
+            "skills_required": "SQL, Node.js, React, Django",
+            "date_posted": "2025-03-27T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 11,
+        "fields": {
+            "title": "Scrum Master",
+            "company": "Bancolombia",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "internship",
+            "experience_level": "junior",
+            "skills_required": "React, HTML, Kanban, SQL",
+            "date_posted": "2025-03-30T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 12,
+        "fields": {
+            "title": "QA Tester",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "remote",
+            "experience_level": "junior",
+            "skills_required": "SQL, Java, Scrum, Kanban",
+            "date_posted": "2025-03-15T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 13,
+        "fields": {
+            "title": "Especialista en SEO",
+            "company": "Ruta N",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "internship",
+            "experience_level": "entry",
+            "skills_required": "Kanban, Docker, HTML, Python",
+            "date_posted": "2025-03-25T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 14,
+        "fields": {
+            "title": "Desarrollador Frontend",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "remote",
+            "experience_level": "mid",
+            "skills_required": "Photoshop, Linux, Power BI, Java",
+            "date_posted": "2025-04-06T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 15,
+        "fields": {
+            "title": "Ingeniero de Seguridad Informática",
+            "company": "Grupo Éxito",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "A convenir",
+            "employment_type": "internship",
+            "experience_level": "senior",
+            "skills_required": "Illustrator, Java, Kanban, SAP",
+            "date_posted": "2025-03-20T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 16,
+        "fields": {
+            "title": "Líder de Proyecto",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "full_time",
+            "experience_level": "entry",
+            "skills_required": "Node.js, Java, Power BI, SQL",
+            "date_posted": "2025-04-01T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 17,
+        "fields": {
+            "title": "Diseñador Gráfico",
+            "company": "Innovatech",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "contract",
+            "experience_level": "junior",
+            "skills_required": "Python, Node.js, CSS, Kanban",
+            "date_posted": "2025-03-09T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 18,
+        "fields": {
+            "title": "Administrador de Sistemas",
+            "company": "Ruta N",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Figma, Excel, Python, SAP",
+            "date_posted": "2025-04-04T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 19,
+        "fields": {
+            "title": "Consultor SAP",
+            "company": "Endava",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "contract",
+            "experience_level": "senior",
+            "skills_required": "React, Excel, Node.js, SAP",
+            "date_posted": "2025-04-05T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 20,
+        "fields": {
+            "title": "Desarrollador Mobile",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "A convenir",
+            "employment_type": "contract",
+            "experience_level": "entry",
+            "skills_required": "Figma, Excel, Django, Photoshop",
+            "date_posted": "2025-03-28T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 21,
+        "fields": {
+            "title": "Analista de Negocios",
+            "company": "Mercado Libre",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "part_time",
+            "experience_level": "mid",
+            "skills_required": "Java, Linux, Excel, HTML",
+            "date_posted": "2025-03-30T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 22,
+        "fields": {
+            "title": "Arquitecto de Software",
+            "company": "Universidad de Antioquia",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "full_time",
+            "experience_level": "senior",
+            "skills_required": "SAP, Illustrator, Kubernetes, React",
+            "date_posted": "2025-04-08T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 23,
+        "fields": {
+            "title": "Técnico en Redes",
+            "company": "Grupo Éxito",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "full_time",
+            "experience_level": "entry",
+            "skills_required": "Excel, HTML, Power BI, AWS",
+            "date_posted": "2025-03-16T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 24,
+        "fields": {
+            "title": "Especialista en Cloud",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "remote",
+            "experience_level": "entry",
+            "skills_required": "Excel, Illustrator, AWS, Java",
+            "date_posted": "2025-03-25T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 25,
+        "fields": {
+            "title": "Ingeniero Electrónico",
+            "company": "Mercado Libre",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "A convenir",
+            "employment_type": "remote",
+            "experience_level": "junior",
+            "skills_required": "Node.js, Illustrator, Power BI, Excel",
+            "date_posted": "2025-03-23T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 26,
+        "fields": {
+            "title": "Ingeniero en Automatización",
+            "company": "Endava",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "full_time",
+            "experience_level": "senior",
+            "skills_required": "Kanban, SQL, Django, Node.js",
+            "date_posted": "2025-03-11T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 27,
+        "fields": {
+            "title": "Contador Junior",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "full_time",
+            "experience_level": "mid",
+            "skills_required": "Photoshop, Power BI, SAP, Docker",
+            "date_posted": "2025-03-30T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 28,
+        "fields": {
+            "title": "Asistente Administrativo",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "contract",
+            "experience_level": "mid",
+            "skills_required": "Illustrator, Python, Django, HTML",
+            "date_posted": "2025-03-29T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 29,
+        "fields": {
+            "title": "Reclutador IT",
+            "company": "Sophos",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "part_time",
+            "experience_level": "senior",
+            "skills_required": "Python, Scrum, AWS, SQL",
+            "date_posted": "2025-03-16T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 30,
+        "fields": {
+            "title": "Community Manager",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "contract",
+            "experience_level": "junior",
+            "skills_required": "Illustrator, Photoshop, Excel, AWS",
+            "date_posted": "2025-03-24T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 31,
+        "fields": {
+            "title": "Psicólogo Organizacional",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "contract",
+            "experience_level": "mid",
+            "skills_required": "Kanban, Python, CSS, Node.js",
+            "date_posted": "2025-04-05T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 32,
+        "fields": {
+            "title": "Asistente de Recursos Humanos",
+            "company": "TechSolutions",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "part_time",
+            "experience_level": "senior",
+            "skills_required": "Linux, CSS, Figma, HTML",
+            "date_posted": "2025-04-08T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 33,
+        "fields": {
+            "title": "Gestor de Contenido",
+            "company": "Mercado Libre",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "remote",
+            "experience_level": "entry",
+            "skills_required": "Django, CSS, Illustrator, Power BI",
+            "date_posted": "2025-04-04T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 34,
+        "fields": {
+            "title": "Vendedor Técnico",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "part_time",
+            "experience_level": "mid",
+            "skills_required": "SAP, React, AWS, Kanban",
+            "date_posted": "2025-03-10T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 35,
+        "fields": {
+            "title": "Ilustrador Digital",
+            "company": "EPM",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "contract",
+            "experience_level": "entry",
+            "skills_required": "AWS, CSS, Django, Node.js",
+            "date_posted": "2025-03-10T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 36,
+        "fields": {
+            "title": "Ingeniero Mecatrónico",
+            "company": "Bancolombia",
+            "location": "Medellín",
+            "description": "La posición requiere habilidades de comunicación, proactividad y compromiso.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Excel, AWS, CSS, Power BI",
+            "date_posted": "2025-03-30T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 37,
+        "fields": {
+            "title": "Técnico en Mantenimiento",
+            "company": "Innovatech",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "contract",
+            "experience_level": "junior",
+            "skills_required": "Python, Illustrator, Power BI, CSS",
+            "date_posted": "2025-03-23T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 38,
+        "fields": {
+            "title": "Diseñador Industrial",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "contract",
+            "experience_level": "mid",
+            "skills_required": "CSS, Python, SQL, Power BI",
+            "date_posted": "2025-04-02T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 39,
+        "fields": {
+            "title": "Ingeniero Civil",
+            "company": "Rappi",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "remote",
+            "experience_level": "senior",
+            "skills_required": "AWS, CSS, Docker, Kanban",
+            "date_posted": "2025-03-23T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 40,
+        "fields": {
+            "title": "Gerente Comercial",
+            "company": "Bancolombia",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "part_time",
+            "experience_level": "senior",
+            "skills_required": "SAP, Figma, Docker, CSS",
+            "date_posted": "2025-04-01T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 41,
+        "fields": {
+            "title": "Product Owner",
+            "company": "Mercado Libre",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "internship",
+            "experience_level": "senior",
+            "skills_required": "Kubernetes, Django, Python, Linux",
+            "date_posted": "2025-03-28T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 42,
+        "fields": {
+            "title": "Programador Python",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "full_time",
+            "experience_level": "senior",
+            "skills_required": "Django, SQL, SAP, HTML",
+            "date_posted": "2025-03-16T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 43,
+        "fields": {
+            "title": "Analista de Datos",
+            "company": "Ruta N",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Kanban, Django, Python, Photoshop",
+            "date_posted": "2025-04-03T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 44,
+        "fields": {
+            "title": "Asesor Comercial",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "full_time",
+            "experience_level": "junior",
+            "skills_required": "Illustrator, React, Kubernetes, Django",
+            "date_posted": "2025-03-23T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 45,
+        "fields": {
+            "title": "Auxiliar Contable",
+            "company": "Rappi",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$2.000.000 - $3.000.000",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Linux, Django, Scrum, Excel",
+            "date_posted": "2025-03-29T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 46,
+        "fields": {
+            "title": "Desarrollador Java",
+            "company": "Grupo Éxito",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "A convenir",
+            "employment_type": "full_time",
+            "experience_level": "junior",
+            "skills_required": "Excel, Docker, HTML, Illustrator",
+            "date_posted": "2025-03-10T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 47,
+        "fields": {
+            "title": "Tester Automatizado",
+            "company": "Sura",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "part_time",
+            "experience_level": "mid",
+            "skills_required": "HTML, CSS, Kubernetes, React",
+            "date_posted": "2025-03-09T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 48,
+        "fields": {
+            "title": "Arquitecto de Datos",
+            "company": "Innovatech",
+            "location": "Medellín",
+            "description": "Buscamos profesionales apasionados por la tecnología y el trabajo en equipo.",
+            "responsibilities": "Analizar requerimientos del cliente, Implementar mejoras continuas, Participar en code reviews",
+            "requirements": "Capacidad de análisis, Comunicación efectiva, Dominio del idioma inglés",
+            "salary_range": "$6.000.000 - $8.000.000",
+            "employment_type": "part_time",
+            "experience_level": "mid",
+            "skills_required": "Figma, Scrum, Kanban, HTML",
+            "date_posted": "2025-03-29T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 49,
+        "fields": {
+            "title": "Técnico Soporte TI",
+            "company": "Globant",
+            "location": "Medellín",
+            "description": "Ofrecemos oportunidades de crecimiento y desarrollo profesional en un entorno innovador.",
+            "responsibilities": "Desarrollar nuevas funcionalidades, Mantener la base de código existente, Colaborar con otros equipos",
+            "requirements": "Título universitario relacionado, Experiencia previa mínima de 2 años, Manejo de herramientas ágiles",
+            "salary_range": "$3.000.000 - $4.500.000",
+            "employment_type": "part_time",
+            "experience_level": "junior",
+            "skills_required": "Kanban, Excel, React, Docker",
+            "date_posted": "2025-03-15T14:56:01.366056",
+            "is_active": true
+        }
+    },
+    {
+        "model": "jobs.job",
+        "pk": 50,
+        "fields": {
+            "title": "Desarrollador Backend",
+            "company": "Tata Consultancy Services",
+            "location": "Medellín",
+            "description": "Únete a nuestro equipo para trabajar en proyectos desafiantes con tecnologías modernas.",
+            "responsibilities": "Diseñar soluciones escalables, Participar en sesiones de planificación, Documentar procesos técnicos",
+            "requirements": "Experiencia en el área, Conocimientos técnicos relevantes, Trabajo en equipo",
+            "salary_range": "$4.000.000 - $6.000.000",
+            "employment_type": "internship",
+            "experience_level": "entry",
+            "skills_required": "Linux, Kubernetes, Python, Node.js",
+            "date_posted": "2025-04-03T14:56:01.366056",
+            "is_active": true
+        }
+    }
+]

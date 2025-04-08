@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magneto - Crear cuenta</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #004488, #0066cc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 450px;
+            width: 100%;
+        }
+
+        .signup-card h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .signup-card form p {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .signup-card input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            font-size: 14px;
+        }
+
+        .signup-card input:focus {
+            border-color: #0066cc;
+            box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+        }
+
+        .signup-button {
+            background-color: #004488;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .signup-button:hover {
+            background-color: #0066cc;
+        }
+
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+
+        .login-text {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .login-text a {
+            color: #004488;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 5px;
+        }
+
+        .login-text a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-card">
+        <h2>Crear una cuenta en Magneto</h2>
+        {% if error %}
+        <div class="alert">{{ error }}</div>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="signup-button">Registrarse</button>
+        </form>
+        <p class="login-text">
+            ¿Ya tienes una cuenta?
+            <a href="{% url 'loginaccount' %}">Inicia sesión</a>
+        </p>
+    </div>
+</body>
+</html>
