@@ -5,116 +5,135 @@
     <title>Mi Perfil Profesional - Magneto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
         body {
-            background-color: #f8f9fa;
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* NAVBAR */
-        .navbar {
-            background-color: #002855;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-        }
-
-        .navbar-brand {
-            font-size: 1.75rem;
-            font-weight: 700;
-        }
-
-        .nav-link {
-            font-size: 1.1rem;
-            margin-left: 1rem;
-        }
-
-        /* PROFILE CONTAINER */
-        .profile-container {
-            max-width: 800px;
-            margin: 60px auto;
-            background-color: #ffffff;
-            padding: 3rem;
-            border-radius: 18px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        }
-
-        .profile-header {
-            text-align: center;
-            color: #002855;
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 2rem;
-        }
-
-        .profile-field {
-            margin-bottom: 1.5rem;
-        }
-
-        .profile-label {
-            font-weight: 600;
-            color: #555;
-            margin-bottom: 0.5rem;
-            display: block;
-            font-size: 1rem;
-        }
-
-        .profile-value {
-            background-color: #f4f4f4;
-            border-radius: 10px;
-            padding: 1rem;
-            font-size: 1rem;
-            color: #333;
-            border: 1px solid #ddd;
-        }
-
-        .edit-button {
-            display: block;
-            margin: 2rem auto 0;
-            padding: 1rem 2rem;
-            background-color: #004a99;
-            color: white;
-            font-weight: 600;
-            border: none;
-            border-radius: 12px;
-            font-size: 1rem;
-            text-align: center;
-            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8fafd;
             transition: background-color 0.3s ease;
-            max-width: 300px;
         }
-
-        .edit-button:hover {
-            background-color: #002855;
+        .navbar {
+            background-color: #002147 !important;
+            padding: 15px 40px; 
+            min-height: 60px; 
         }
-
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: #ffffff !important;
+            font-size: 1.3rem;
+        }
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+        }
+        .navbar .nav-link:hover {
+            color: #ffcc00 !important;
+        }
+        .navbar-brand:hover img {
+            transform: rotate(10deg);
+        }
         footer {
-            background-color: #e9ecef;
-            padding: 20px 0;
+            margin-top: 5rem;
+            padding: 2rem 0;
+            background-color: #002147;
             text-align: center;
-            margin-top: 60px;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+        footer:hover {
+            background-color: #002147;
+        }
+        .card {
+            border: 0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #004a99;
+            border-color: #004a99;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #003f7d;
+        }
+        .btn-outline-primary {
+            border-color: #004a99;
+            color: #004a99;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-primary:hover {
+            background-color: #004a99;
+            color: #fff;
+        }
+        .hero {
+            background-color: #e6f0ff;
+            padding: 3rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .hero:hover {
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #004a99;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        .hero p {
+            font-size: 1.1rem;
             color: #555;
+            margin-top: 1rem;
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark">
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002855; padding-top: 1rem; padding-bottom: 1rem;">
     <div class="container">
-        <a class="navbar-brand" href="/">Magneto</a>
+        <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="#">
+            <img src="/media/images/logoM.png" alt="Logo Magneto"> Magneto
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
             <ul class="navbar-nav fs-5 gap-3">
-                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'job_list' %}">Vacantes</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'job_list' %}">Vacantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'recomendaciones' %}">Recomendaciones</a>
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -135,40 +154,76 @@
     </div>
 </nav>
 
-<!-- Detalle del perfil -->
-<div class="profile-container">
-    <div class="profile-header">Mi Perfil Profesional</div>
-
-    <div class="profile-field">
-        <span class="profile-label">Objetivos de carrera</span>
-        <div class="profile-value">{{ profile.career_goals }}</div>
+<!-- HERO -->
+<div class="container mt-5">
+    <div class="hero">
+        <h1 class="fw-bold">Mi Perfil Profesional</h1>
+        <p class="mt-3">Aquí puedes consultar y actualizar tu información profesional para recibir mejores recomendaciones.</p>
     </div>
-
-    <div class="profile-field">
-        <span class="profile-label">Nivel de experiencia</span>
-        <div class="profile-value">{{ profile.experience_level }}</div>
-    </div>
-
-    <div class="profile-field">
-        <span class="profile-label">Habilidades</span>
-        <div class="profile-value">{{ profile.skills }}</div>
-    </div>
-
-    <div class="profile-field">
-        <span class="profile-label">Intereses</span>
-        <div class="profile-value">{{ profile.interests }}</div>
-    </div>
-
-    <div class="profile-field">
-        <span class="profile-label">Valores</span>
-        <div class="profile-value">{{ profile.values }}</div>
-    </div>
-
-    <a class="edit-button" href="{% url 'edit_profile' %}">Editar Perfil</a>
 </div>
 
+<!-- PROFILE DETAILS -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+
+            <!-- Información general -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Información General</h5>
+                    <p><strong>Nombre:</strong> {{ user.first_name }} {{ user.last_name }}</p>
+                    <p><strong>Correo:</strong> {{ user.email }}</p>
+                    <p><strong>Objetivo profesional:</strong> {{ profile.objetivos_profesionales }}</p>
+                    <p><strong>Categoría de trabajo:</strong> {{ profile.get_categoria_trabajo_display }}</p>
+                    <p><strong>Nivel de experiencia:</strong> {{ profile.get_nivel_experiencia_display }}</p>
+                </div>
+            </div>
+
+            <!-- Habilidades e intereses -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Habilidades e Intereses</h5>
+                    <p><strong>Habilidades:</strong> {{ profile.habilidades }}</p>
+                    <p><strong>Intereses:</strong> {{ profile.intereses }}</p>
+                    <p><strong>Valores:</strong> {{ profile.valores }}</p>
+                </div>
+            </div>
+
+            <!-- Educación y certificaciones -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Educación y Certificaciones</h5>
+                    <p><strong>Educación máxima alcanzada:</strong> {{ profile.educacion_maxima }}</p>
+                    <p><strong>Certificaciones:</strong> {{ profile.certificaciones }}</p>
+                </div>
+            </div>
+
+            <!-- Preferencias laborales -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Preferencias Laborales</h5>
+                    <p><strong>Tipo de trabajo preferido:</strong> {{ profile.get_tipo_trabajo_preferido_display }}</p>
+                    <p><strong>Disponibilidad:</strong> {{ profile.get_disponibilidad_display }}</p>
+                </div>
+            </div>
+
+            <!-- Idiomas -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Idiomas</h5>
+                    <p><strong>Idiomas hablados:</strong> {{ profile.idiomas_hablados }}</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
 <footer>
-    &copy; 2025 Magneto. Todos los derechos reservados.
+    <div class="container">
+        © 2025 Magneto. Todos los derechos reservados.
+    </div>
 </footer>
 
 <!-- Bootstrap JS -->

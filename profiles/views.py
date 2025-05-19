@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import ProfileForm
 from .models import Profile
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages  # Importar el sistema de mensajes
 
 @login_required
 def edit_profile(request):
@@ -11,7 +12,10 @@ def edit_profile(request):
         form = ProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
-            return redirect('profile_detail')  # Asegúrate de crear esta vista luego
+            messages.success(request, "¡Cambios guardados con éxito!")  # Mensaje de éxito
+            return redirect('profile_detail')  # Redirigir a la vista de detalles del perfil
+        else:
+            messages.error(request, "Hubo un error al guardar los cambios. Inténtalo nuevamente.")  # Mensaje de error
     else:
         form = ProfileForm(instance=profile)
 

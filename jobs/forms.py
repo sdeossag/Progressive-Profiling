@@ -6,6 +6,6 @@ class JobForm(forms.ModelForm):
         model = Job
         fields = '__all__'
         widgets = {
-            'description': forms.Textarea(attrs={'rows': 4}),
-            'skills_required': forms.Textarea(attrs={'rows': 3}),
+            'descripcion': forms.Textarea(attrs={'rows': 4}),
+            'habilidades_requeridas': forms.Textarea(attrs={'rows': 3}),
         }

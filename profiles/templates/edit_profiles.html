@@ -7,119 +7,128 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Inter Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Inter', sans-serif;
+        html, body {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f8fafd;
         }
-
-        /* NAVBAR */
+        main {
+            flex: 1;
+        }
         .navbar {
-            background-color: #002855;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            background-color: #002147 !important;
+            padding: 42px 40px !important;
+            min-height: 60px !important;
         }
-
-        .navbar-brand {
-            font-size: 1.75rem;
-            font-weight: 700;
+        .navbar .nav-link,
+        .navbar .navbar-brand {
+            color: #ffffff !important;
+            font-size: 1.3rem;
         }
-
-        .nav-link {
-            font-size: 1.1rem;
-            margin-left: 1rem;
+        .navbar-brand img {
+            height: 40px;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
         }
-
-        /* FORM */
-        .form-wrapper {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 3rem;
-            background-color: #ffffff;
-            border-radius: 18px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        .navbar .nav-link:hover {
+            color: #ffcc00 !important;
         }
-
-        .form-wrapper h2 {
-            text-align: center;
-            color: #002855;
-            font-size: 2rem;
-            margin-bottom: 2rem;
-            font-weight: 700;
+        .navbar-brand:hover img {
+            transform: rotate(10deg);
         }
-
-        label {
-            font-weight: 600;
-            color: #333;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        input[type="text"],
-        textarea,
-        select {
-            width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.5rem;
-            font-size: 1rem;
-            border: 1px solid #ced4da;
-            border-radius: 12px;
-            background-color: #f9f9f9;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        input:focus,
-        textarea:focus,
-        select:focus {
-            outline: none;
-            border-color: #004a99;
-            box-shadow: 0 0 0 3px rgba(0, 74, 153, 0.1);
-            background-color: #ffffff;
-        }
-
-        button {
-            width: 100%;
-            padding: 1rem;
+        .btn-primary {
             background-color: #004a99;
-            color: white;
-            border: none;
-            font-size: 1rem;
+            border-color: #004a99;
             font-weight: 600;
-            border-radius: 12px;
             transition: background-color 0.3s ease;
         }
-
-        button:hover {
-            background-color: #002855;
+        .btn-primary:hover {
+            background-color: #003f7d;
         }
-
+        .btn-outline-primary {
+            border-color: #004a99;
+            color: #004a99;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-outline-primary:hover {
+            background-color: #004a99;
+            color: #fff;
+        }
         footer {
-            background-color: #e9ecef;
-            padding: 20px 0;
+            padding: 2rem 0;
+            background-color: #002147;
             text-align: center;
-            margin-top: 60px;
-            font-size: 0.9rem;
-            color: #555;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin-top: 3rem;
+            transition: all 0.3s ease;
+        }
+        .form-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #004a99;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .form-step {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .form-step.active {
+            display: block;
+            opacity: 1;
+        }
+        .progress-container {
+            margin-bottom: 30px;
+        }
+        .progress-bar {
+            background-color: #004a99;
+        }
+        .btn {
+            border-radius: 50px;
+            padding: 10px 30px;
         }
     </style>
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- NAVBAR -->
 <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <a class="navbar-brand" href="/">Magneto</a>
+        <a class="navbar-brand fw-bold fs-3 d-flex align-items-center" href="#">
+            <img src="/media/images/logoM.png" alt="Logo Magneto"> Magneto
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
             <ul class="navbar-nav fs-5 gap-3">
-                <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'job_list' %}">Vacantes</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'edit_profile' %}">Perfil</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'job_list' %}">Vacantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="{% url 'edit_profile' %}">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'recomendaciones' %}">Recomendaciones</a>
                 </li>
                 {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -140,48 +149,157 @@
     </div>
 </nav>
 
-<!-- Formulario -->
-<div class="form-wrapper">
-    <h2>Editar Perfil Profesional</h2>
-    <form method="post">
-        {% csrf_token %}
+<main class="container">
+    <div class="form-container shadow-sm">
+        <h1 class="form-title">Editar Perfil</h1>
 
-        <div>
-            <label for="id_career_goals">Objetivos de carrera</label>
-            {{ form.career_goals }}
+        <!-- Mensajes de éxito y error -->
+        {% if messages %}
+            <div>
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <div class="progress-container mb-4">
+            <div class="progress">
+                <div id="progressBar" class="progress-bar" role="progressbar" style="width: 33%;"></div>
+            </div>
         </div>
 
-        <div>
-            <label for="id_experience_level">Nivel de experiencia</label>
-            {{ form.experience_level }}
-        </div>
+        <form method="post">
+            {% csrf_token %}
+        
+            <!-- Paso 1 -->
+            <div class="form-step active">
+                <div class="mb-3">
+                    <label for="{{ form.objetivos_profesionales.id_for_label }}" class="form-label">Objetivos Profesionales</label>
+                    {{ form.objetivos_profesionales }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.categoria_trabajo.id_for_label }}" class="form-label">Categoría de Trabajo</label>
+                    {{ form.categoria_trabajo }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.nivel_experiencia.id_for_label }}" class="form-label">Nivel de Experiencia</label>
+                    {{ form.nivel_experiencia }}
+                </div>
+            </div>
+        
+            <!-- Paso 2 -->
+            <div class="form-step">
+                <div class="mb-3">
+                    <label for="{{ form.habilidades.id_for_label }}" class="form-label">Habilidades</label>
+                    {{ form.habilidades }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.intereses.id_for_label }}" class="form-label">Intereses</label>
+                    {{ form.intereses }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.valores.id_for_label }}" class="form-label">Valores</label>
+                    {{ form.valores }}
+                </div>
+            </div>
+        
+            <!-- Paso 3 -->
+            <div class="form-step">
+                <div class="mb-3">
+                    <label for="{{ form.educacion_maxima.id_for_label }}" class="form-label">Educación Máxima</label>
+                    {{ form.educacion_maxima }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.certificaciones.id_for_label }}" class="form-label">Certificaciones</label>
+                    {{ form.certificaciones }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.tipo_trabajo_preferido.id_for_label }}" class="form-label">Tipo de Trabajo Preferido</label>
+                    {{ form.tipo_trabajo_preferido }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.disponibilidad.id_for_label }}" class="form-label">Disponibilidad</label>
+                    {{ form.disponibilidad }}
+                </div>
+                <div class="mb-3">
+                    <label for="{{ form.idiomas_hablados.id_for_label }}" class="form-label">Idiomas Hablados</label>
+                    {{ form.idiomas_hablados }}
+                </div>
+            </div>
+        
+            <!-- Botones -->
+            <div class="d-flex justify-content-between mt-4">
+                <button type="button" class="btn btn-outline-primary" id="prevBtn">Anterior</button>
+                <button type="button" class="btn btn-primary" id="nextBtn">Siguiente</button>
+            </div>
+        
+            <!-- Botón de envío -->
+            <div id="submitContainer" class="d-flex justify-content-center gap-3 mt-4" style="display: none;">
+                <button type="submit" class="btn btn-success">Guardar</button>
+            </div>
+        </form>
+        
+    </div>
+</main>
 
-        <div>
-            <label for="id_skills">Habilidades</label>
-            {{ form.skills }}
-        </div>
-
-        <div>
-            <label for="id_interests">Intereses</label>
-            {{ form.interests }}
-        </div>
-
-        <div>
-            <label for="id_values">Valores</label>
-            {{ form.values }}
-        </div>
-
-        <button type="submit">Guardar Cambios</button>
-    </form>
-</div>
-
-<!-- Footer -->
 <footer>
-    &copy; 2025 Magneto. Todos los derechos reservados.
+    <div class="container">
+        © 2025 Magneto. Todos los derechos reservados.
+    </div>
 </footer>
 
-<!-- Bootstrap JS (para navbar colapsable) -->
+<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    const steps = document.querySelectorAll('.form-step');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    const progressBar = document.getElementById('progressBar');
+    const submitContainer = document.getElementById('submitContainer');
+    let currentStep = 0;
+
+    function showStep(step) {
+        steps.forEach((stepDiv, index) => {
+            stepDiv.classList.toggle('active', index === step);
+            stepDiv.style.opacity = index === step ? '1' : '0';
+        });
+        progressBar.style.width = ((step + 1) / steps.length) * 100 + '%';
+
+        if (step === 0) {
+            prevBtn.style.display = 'none';
+            nextBtn.style.display = 'inline-block';
+            submitContainer.style.display = 'none';
+        } else if (step === steps.length - 1) {
+            nextBtn.style.display = 'none';
+            prevBtn.style.display = 'inline-block';
+            submitContainer.style.display = 'flex';
+        } else {
+            prevBtn.style.display = 'inline-block';
+            nextBtn.style.display = 'inline-block';
+            submitContainer.style.display = 'none';
+        }
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if (currentStep < steps.length - 1) {
+            currentStep++;
+            showStep(currentStep);
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentStep > 0) {
+            currentStep--;
+            showStep(currentStep);
+        }
+    });
+
+    showStep(currentStep);
+</script>
 
 </body>
 </html>

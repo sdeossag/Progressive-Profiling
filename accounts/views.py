@@ -56,5 +56,5 @@ def edit_profile(request):
     return render(request, 'edit_profiles.html')
 
 def home(request):
-    jobs = Job.objects.all().order_by('-date_posted')[:6]
+    jobs = Job.objects.all().order_by('fecha_publicacion')[:6]
     return render(request, 'home.html', {'jobs': jobs})
