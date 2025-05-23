@@ -89,6 +89,36 @@
             font-size: 1.2rem;
             color: #888;
         }
+
+        .card-inverted {
+            background-color: #004a99; /* azul */
+            color: white;
+        }
+        .card-inverted .card-title {
+            color: #ffcc00;
+        }
+        .card-inverted .card-subtitle,
+        .card-inverted p {
+            color: #e0e0e0;
+        }
+        .card-inverted .btn-outline-primary {
+            border-color: #ffcc00;
+            color: #ffcc00;
+        }
+        .card-inverted .btn-outline-primary:hover {
+            background-color: #ffcc00;
+            color: #004a99;
+        }
+        .recommendations-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            justify-content: center;
+            align-items: start;
+            margin: 2rem auto;
+            max-width: 1200px;
+        }
+
     </style>
 </head>
 <body>
@@ -151,17 +181,16 @@
                         </h6>
                         <p>{{ job.descripcion|truncatechars:200 }}</p>
                         <a href="{% url 'job_detail' job.id %}" class="btn btn-sm btn-outline-primary mt-2">Ver detalles</a>
-
-                        <!-- Boton Like -->
-                        <form method="post" action="{% url 'job_like' job.id %}" class="mt-2">
-                            {% csrf_token %}
-                            <button type="submit" class="btn btn-sm btn-primary">👍 Me gusta</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                        <button class="btn btn-sm btn-primary mt-2 like-btn" data-job-id="{{ job.id }}">👍 Me gusta</button>
+                    </div> <!-- .card-body -->
+                </div> <!-- .card -->
+            </div> <!-- .col -->
             {% endfor %}
         </div>
+
+        <!-- Nueva fila para tarjetas similares -->
+        <div class="row mt-4" id="similar-jobs-container"></div>
+
     {% else %}
         <div class="no-results">No se encontraron empleos relevantes para tu perfil.<br>¡Actualiza tu perfil para obtener mejores recomendaciones!</div>
     {% endif %}
@@ -176,6 +205,58 @@
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const csrftoken = '{{ csrf_token }}';
+
+    document.querySelectorAll('.like-btn').forEach(button => {
+        button.addEventListener('click', function () {
+            const jobId = this.getAttribute('data-job-id');
+            const url = `/recomendaciones/${jobId}/like-and-similar/`;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'X-CSRFToken': csrftoken,
+                    'Accept': 'application/json'
+                }
+            })
+            .then(res => res.json())
+            .then(data => {
+                const similarContainer = document.getElementById('similar-jobs-container');
+                similarContainer.innerHTML = '';  // Limpia anteriores si no deseas acumular
+
+                if (data.similar_jobs.length === 0) {
+                    similarContainer.innerHTML = '<p class="text-muted">No se encontraron similares.</p>';
+                    return;
+                }
+
+                data.similar_jobs.forEach(job => {
+                    const card = document.createElement('div');
+                    card.className = 'col-md-6 col-lg-4 mb-4';
+                    card.innerHTML = `
+                        <div class="card card-inverted h-100">
+                            <div class="card-body">
+                                <h5 class="card-title">${job.titulo}</h5>
+                                <h6 class="card-subtitle mb-2">
+                                    ${job.empresa} - ${job.ubicacion}<br>
+                                    ${job.tipo_empleo} | Nivel: ${job.nivel_experiencia}
+                                </h6>                                                
+                                <p>${job.descripcion}</p>
+                                <a href="/jobs/${job.id}/" class="btn btn-sm btn-outline-primary">Ver detalles</a>
+                            </div>
+                        </div>`;
+                    similarContainer.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    });
+});
+</script>
+
+
 
 </body>
 </html>

@@ -4,6 +4,7 @@ from accounts import views as accountsViews
 from django.conf import settings
 from django.conf.urls.static import static  # Importa static aquí
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', accountsViews.home),

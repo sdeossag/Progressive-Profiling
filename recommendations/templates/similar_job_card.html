@@ -1,0 +1,15 @@
+{% for job in similar_jobs %}
+<div class="col-md-6 col-lg-4 mb-4">
+    <div class="card h-100 bg-dark text-white">
+        <div class="card-body">
+            <h5 class="card-title text-warning">{{ job.titulo }}</h5>
+            <h6 class="card-subtitle mb-2">
+                {{ job.empresa }} - {{ job.ubicacion }}<br>
+                {{ job.get_tipo_empleo_display }} | Nivel: {{ job.get_nivel_experiencia_display }}
+            </h6>
+            <p class="card-text">{{ job.descripcion|truncatechars:200 }}</p>
+            <a href="{% url 'job_detail' job.id %}" class="btn btn-sm btn-outline-warning mt-2">Ver detalles</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
